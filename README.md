@@ -14,6 +14,9 @@ Clone the repository:
    ```bash
    git clone https://github.com/zeusgodyt/Karn-Flask-BloodBank-and-Organ-Management.git
 ````
-
+Run the Application:
+````
+python myapp1.py
+````
 ![Project Image](Homepage.png)
 ![Project Image](Login.png)
