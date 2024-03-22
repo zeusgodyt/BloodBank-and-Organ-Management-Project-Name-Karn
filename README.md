@@ -10,6 +10,6 @@ Karn-Flask-BloodBank-and-Organ-Management is a web application built using Flask
 - **Responsive Design**: Ensures the application works seamlessly across devices.
 
 ## Installation
-1. Clone the repository:
+Clone the repository:
    ```bash
    git clone https://github.com/zeusgodyt/Karn-Flask-BloodBank-and-Organ-Management.git
