@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffffea;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    /* width: calc(25% - 40px); Adjusted width to maintain square shape */
+    /* flex-grow: 1; */
+    margin: 50px;
+    width: 150px;
+    height: 100px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    font-size: 16px;
+    text-decoration: #f2f2f2;
+}
+
+
+.blood-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        width: calc(100% - 40px);
+    }
+}
+
+body{
+    background-color: #e5e4e2;
+}
+

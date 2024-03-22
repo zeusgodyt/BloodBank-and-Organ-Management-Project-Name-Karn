@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <style>
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      text-align: center;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('/static/Spinning-DNA-Red-Pink.gif');
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 50%;
+      /* Adjust width as needed */
+      border-radius: 20px;
+      height: 500px;
+      background: #ffffff5a;
+      backdrop-filter: blur(20px);
+      font-size: larger;
+      color: #fff;
+    }
+
+    .left-content,
+    .right-content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .left-content h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    .left-content ul {
+      padding-left: 20px;
+    }
+
+    .left-content li {
+      list-style: none;
+    }
+
+    .left-content .log_button {
+      margin-left: 130px;
+      /* Adjust as needed */
+    }
+
+    .left-content .password,
+    .left-content .username {
+      padding: 10px 30px;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      margin: 10px 0;
+    }
+
+    .right-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .slideshow-container {
+      max-width: 500px;
+      /* adjust width as needed */
+    }
+
+    .register_button {
+      margin-left: 30px;
+      margin-right: 80px;
+      /* Adjust as needed */
+      padding: 12px 30px;
+      /* Adjust padding for button size */
+      border: none;
+      border-radius: 20px;
+      outline: none;
+      cursor: pointer;
+      background-color: #4CAF50;
+      /* Green background color */
+      color: white;
+      /* White text color */
+      transition: background-color 0.3s;
+      /* Smooth transition on hover */
+    }
+    .register_button {
+      margin-left: 140px;
+      margin-right: 80px;
+      /* Adjust as needed */
+      padding: 12px 30px;
+      /* Adjust padding for button size */
+      border: none;
+      border-radius: 20px;
+      outline: none;
+      cursor: pointer;
+      background-color: #4CAF50;
+      /* Green background color */
+      color: white;
+      /* White text color */
+      transition: background-color 0.3s;
+      /* Smooth transition on hover */
+    }
+
+    .register_button:hover {
+      background-color: #45a049;
+      /* Darker green on hover */
+    }
+
+  
+
+    .mySlides img {
+      width: 100%;
+      /* Set width to 100% for responsive images */
+      height: auto;
+      /* Automatically adjust height */
+      border-radius: 10px;
+
+      /* Add rounded corners */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    }
+
+    .logo {
+      width: 120px;
+      /* Set your desired width */
+      height: auto;
+      /* Automatically adjust height */
+      margin-bottom: 30px;
+      margin-left: 15px;
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="left-content">
+      <img src="/static/logo.png" alt="Logo" class="logo">
+      <h1>User Registration</h1>
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <ul>
+        {% for message in messages %}
+        <li class="{% if 'error' in message %}error{% elif 'success' in message %}success{% else %}default{% endif %}">
+          {{ message }}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% endwith %}
+      <form method="post" action="{{ url_for('register') }}">
+        <label for="username" class="username_label">Username:</label>
+        <input type="text" name="username" class="username" required>
+        <br>
+        <label for="password" class="password_label">Password:</label>
+        <input type="password" name="password" class="password" required>
+        <br>
+        <input type="submit" class="register_button" value="Register">
+      </form>
+      <p>
+        <br>
+        Already have an account?
+        <a href="{{ url_for('login') }}">Log in here</a>.
+      </p>
+    </div>
+
+    <div class="right-content">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/static/Slide1.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/static/Slide2.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/static/Slide3.jpeg" style="width:100%">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var slideIndex = 0;
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    // Call the function to start the slideshow
+    showSlides();
+  </script>
+</body>
+</html>

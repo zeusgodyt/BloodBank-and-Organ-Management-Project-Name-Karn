@@ -1,0 +1,119 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #db4a4a;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: rgb(214, 12, 12);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#donorForm{
+    background-color:red ;
+}
+
+body{
+    background-color:#e5e4e2 ;
+}
+
+label{
+    color: #f4f4f4;
+
+}
+
+div{
+    color: #f4f4f4;
+}
+
+
+h2{
+    color: #f4f4f4;
+}
+
+h3{
+    color: #f4f4f4;
+}
+ */

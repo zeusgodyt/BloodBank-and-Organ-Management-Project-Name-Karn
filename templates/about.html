@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <style>
+      
+/* ===========================================
+ Bio Data Section Start
+======================================= */
+
+
+.bio-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active{
+  text-decoration-line: underline;
+}
+.bio-image img {
+  display: inline-block;
+  width: 80%;
+  box-shadow: -2rem -2rem 0rem 0rem var(--helper);
+}
+
+.common-heading {
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.common-heading::before {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--helper);
+}
+
+.common-heading::after {
+  content: "";
+  position: absolute;
+  top: 128%;
+  left: 1.5rem;
+  width: 30%;
+  height: 0.3rem;
+  background: var(--helper);
+}
+
+.bio-data-stats {
+  padding: 6.4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.bio-progress-bar {
+  width: 90%;
+  height: 0.8rem;
+  /* background: var(--para); */
+  background-color: rgb(233 236 239);
+  border-radius: 10rem;
+  position: relative;
+  box-shadow: var(--shadpw);
+  /* overflow: hidden; */
+}
+
+.bio-progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: inherit;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgb(132 144 255) 0%,
+    rgb(98 189 252) 100%
+  );
+  border-radius: 10rem;
+}
+
+/* to create the rectangle box  */
+.bio-progress-bar span {
+  position: absolute;
+  top: 1.8rem;
+  left: 76%;
+  width: 4rem;
+  height: 2rem;
+  background: var(--helper);
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+}
+
+/* to create the traingle or caret symbol  */
+.bio-progress-bar span::after {
+  content: "";
+  position: absolute;
+  top: -1.6rem;
+  width: 0rem;
+  height: 0rem;
+  border: 0.8rem solid var(--helper);
+  border-color: transparent;
+  border-bottom-color: var(--helper);
+}
+/* ===========================================
+1st set Start
+======================================= */
+
+.section-hero {
+    background: var(--bg);
+  }
+  
+  .section-hero-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .hero-top-data {
+    text-transform: uppercase;
+    color: var(--heading);
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--project);
+  }
+  
+  .hero-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 4rem;
+    
+  }
+  
+  .hero-para {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 60rem;
+  }
+  
+  .section-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* Brightness-zoom Container */
+.img-hover-zoom--brightness img {
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(100%);
+  /* width: 80%;
+  height: 60%; */
+  margin-top: 5%;
+  margin-bottom: 40%;
+}
+
+/* The Transformation */
+.img-hover-zoom--brightness:hover img {
+  filter: brightness(110%);
+  transform: scale(1.1);
+}
+
+  /* ===========================================
+     2nd set Start
+  ======================================= */
+
+/* Colorize-zoom Container */
+.img-hover-zoom--colorize img {
+  width: 95%;
+  height: 80%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 3%;
+  margin-right: 3%;
+  transition: transform .5s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+}
+
+/* The Transformation */
+.img-hover-zoom--colorize:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+/* ===========================================
+     2nd set Start
+  ======================================= */
+
+/* Slow-motion Zoom Container */
+.img-hover-zoom--slowmo img {
+  width: 80%;
+  height: 70%;
+  margin-top: 22%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;600;700&family=Poppins:wght@500;600;700;800&family=Rufina:wght@400;700&family=Work+Sans:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.active{
+  text-decoration: underline;
+}
+:root {
+  --heading: rgb(0, 0, 0);
+  --para: #ffffffd8;
+  --para-tint: #e4e4e4;
+  --third: #eceaea4f;
+  --helper:#0421245b;
+  --project: #8490ff;
+  --helper-tint: #000000;
+  --bg: rgb(4, 4, 4);
+  --gradient: linear-gradient(0deg, rgb(44, 62, 255) 0%, rgb(23, 127, 202) 100%);
+  --shadpw: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+}
+
+/* spacing 
+desktop = 4.8rem */
+.hero-heading{
+  color: #ffffff;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #000000;
+  /* background-color: var(--primary-color);
+  background-color: var(--secondary-color); */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Rufina", serif;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+h1 {
+  color: var(--heading);
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+p {
+  color: var(--para);
+  line-height: 1.6;
+  font-size: 1.8rem;
+  color: white;
+
+  /* word-spacing: 0.1rem; */
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+.btn {
+
+  background: -webkit-linear-gradient(
+    0deg,
+    rgb(114, 41, 41)0%,
+    rgb(255, 0, 0) 100%
+  );
+
+  padding: 1.6rem 3.2rem;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255 255 255);
+  display: inline-block;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 60px 0px rgb(255, 0, 4);
+  color: rgb(255, 255, 255);
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.grid {
+
+  display: grid;
+  gap: 9rem;
+}
+
+.grid-two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ===========================================
+Header Section Start
+======================================= */
+
+.header {
+  padding: 0 4.8rem;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 0, 0);
+  background: linear(90deg, rgba(255, 0, 0, 0.942) 12%, rgba(57,141,194,0.8772759103641457) 34%, rgba(57,129,175,0.9024859943977591) 63%, rgba(84,158,207,0.8352591036414566) 100%);
+  /* background: var(--bg); */
+  /* background-color: #e7f5ff; */
+  /* background-color: var(--primary-color);
+  background-color: var(--secondary-color); */
+}
+
+/* .header .logo { */
+  /* width: 15%; */
+  /* height: 3.8rem;
+} */
+
+.header .logo
+{
+    height: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2.8em ;
+    letter-spacing: 0.8px;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-lists {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+  
+}
+
+
+/* ----------------------
+     THEME- DARK/LIGHT 
+-------------------------*/
+/* #icon
+{
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  cursor: pointer;
+  flex: 1;
+  text-align: right;
+
+} */
+
+/* navbar-lists ul
+{
+  flex: 1;
+  text-align: right;
+}
+
+ */
+
+ /* THEME - DARK/LIGHT */
+ /* .dark-theme{
+  
+ --primary-color:#edf2fc;
+ --secondary-color:#212121;
+ } */
+
+
+
+
+
+
+
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.3s;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ul.navbar-lists li+li:before 
+{
+  padding: 6px;
+  color: rgba(46, 46, 46, 0.452);
+  content: "/\00a0";
+} */
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: var(--helper);
+  color: #ffffff;
+  text-decoration-line: underline;
+}
+
+.mobile-navbar-btn {
+  /* by default for normal screen we want to hide  */
+  display: none;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.mobile-nav-icon {
+  width: 5rem;
+  height: 5rem;
+  color: #000000;
+}
+
+/* for desktop or mobile menu-outline one must be visible  
+and we need to hide the close menu icon
+*/
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+/* sticky Navbar */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8rem;
+  width: 100%;
+  background-color: rgb(255, 0, 0);
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* ===========================================
+Hero  Section Start
+======================================= */
+
+.section-hero {
+  background: var(--bg);
+  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.section-hero-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-top-data {
+  text-transform: uppercase;
+  color: var(--heading);
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--project);
+  color: red;
+}
+
+.hero-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.hero-para {
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+  max-width: 60rem;
+}
+
+/* Slow-motion Zoom Container */
+.img-hover-zoom--slowmo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: 0% 50%;
+  transition: transform 3s, filter 3s ease-in-out;
+  filter: brightness(100%);
+}
+
+/* The Transformation */
+.img-hover-zoom--slowmo:hover img {
+  filter: brightness(110%);
+  transform: scale(1.1);
+}
+
+
+/* ===========================================
+     common horizontal line
+======================================= */
+
+
+.common-heading {
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-bottom: 6rem;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.common-heading::before {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background:rgb(164, 164, 164);
+}
+
+.common-heading::after {
+  content: "";
+  position: absolute;
+  top: 128%;
+  left: 1.5rem;
+  width: 30%;
+  height: 0.3rem;
+  background: rgb(255, 0, 0);
+}
+
+/* ===========================================
+ Section portfolio
+======================================= */
+
+.section-portfolio {
+  background-color: var(--bg);
+}
+
+.section-portfolio p,
+.section-services p {
+  max-width: 60rem;
+}
+
+.portfolio-images {
+  gap: 3.2rem;
+  margin-top: 6.4rem;
+}
+
+.img-ovelay {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-images img {
+  width: 100%;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-ovelay .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgb(3, 20, 172) 0%,
+    rgb(0, 149, 255) 100%
+  );
+  opacity: 0;
+  color: var(--third);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: all 0.3s linear;
+  border-radius: 7px;
+  /* box-shadow: inset 0 0 0 0.5rem var(--helper-tint); */
+}
+
+.img-ovelay:hover > .overlay {
+  opacity: 0.8;
+  transform: translateY(0);
+  cursor: pointer;
+}
+
+.img-ovelay .overlay .common-heading {
+  margin: 0;
+  color: var(--third);
+  text-decoration: none;
+}
+
+.section-counter 
+{
+    box-sizing: border-box;
+    width: 100%;
+    position: auto;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(4, 4, 4);
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+}
+  
+  .section-counter__section
+  {
+    width: 70vmin;
+    height: 25vmin;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    border-bottom:8px double rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+  }
+
+  span.section-counter__number
+  {
+    color: rgb(255, 255, 255);
+    font-size: 3.7em;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .section-counter__number 
+  {
+    font-weight: 530;
+    
+    margin-bottom: 0.5rem;
+  }
+
+  span.section-counter__text
+  {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: medium;
+    font-weight: 480;
+  }
+  
+ #blood-bag, #heart, #waiting-list{
+ width: 60px;
+ height: 60px;
+ margin-left: 43%;
+ }
+/* ===========================================
+FAQ's Section
+======================================= */
+
+.section-services p {
+  max-width: 60rem;
+}
+
+.section-services .grid {
+  margin-top: 10rem;
+  row-gap: 10rem;
+}
+
+.service-box {
+  text-align: center;
+  box-shadow: 0 4px 4px 5px rgb(214, 48, 48);
+
+  border-radius: 5px;
+  padding: 6.4rem 3.4rem;
+  transition: all 0.2s linear;
+  color: #ff0000f1;
+}
+
+
+.service-box:hover {
+  transform: translateY(-1rem);
+  background-color: #201414;
+  
+}
+
+.service-icon {
+  width: 25rem;
+  height: 20rem;
+  /* background-color: rgba(135, 60, 60, 0.444); */
+  display: inline-block;
+  border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  padding: 1.9rem 1.8rem;
+  position: relative;
+  color: var(--heading);
+  animation: water-wave 3s linear infinite;
+}
+
+.serive-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(255, 255, 255, 0.207);
+  width: 90%;
+  height: 90%;
+  border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  background-color: transparent;
+  animation: water-wave 5s linear infinite alternate;
+}
+
+@keyframes water-wave {
+  0% {
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  }
+  50% {
+    border-radius: 3% 97% 15% 85% / 72% 0% 100% 28%;
+  }
+  100% {
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  }
+}
+
+.service-box h3 {
+  text-transform: capitalize;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+
+
+/* ===========================================
+Testimonial Swiper Queries Section
+======================================= */
+/* 
+.section-testimonial {
+  background-color: var(--bg);
+} */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 9rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.swiper-client-msg {
+  padding: 5rem 8rem;
+  background-color: var(--third);
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: var(--shadpw);
+  position: relative;
+}
+
+.swiper-client-msg::before {
+  content: "";
+  position: absolute;
+  bottom: -10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: 5rem;
+  height: 5rem; */
+  border: 5rem solid var(--third);
+  border-color: transparent;
+  border-top-color:rgba(230, 230, 230, 0.21);
+}
+
+.swiper-client-msg p::before {
+  content: "\f10d";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  font-size: 5rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #ced3ff;
+}
+
+.swiper-client-msg p::after {
+  /* display: inline-block */
+  content: "\f10e";
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+
+  font-size: 5rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #ced3ff;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-client-data {
+  align-items: center;
+  justify-items: start;
+  justify-content: start;
+  gap: 1.4rem;
+  margin-top: 3.2rem;
+}
+
+.swiper-client-data img {
+  max-width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 0.5rem solid #2a39c3;
+}
+
+.swiper-client-data p:first-child {
+  font-weight: bold;
+  color: var(--heading);
+}
+
+
+/* ===========================================
+contact Section
+======================================= */
+
+.section-contact-main {
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+.section-contact-main form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.section-contact-main .grid {
+  gap: 2.4rem;
+}
+
+.section-contact-main input,
+textarea {
+  padding: 1.5rem 2rem;
+  border: 0.1rem solid #c9c9c9;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "work sans";
+}
+
+.section-contact-main textarea {
+  height: 15rem;
+}
+
+/* ::placeholder {
+  font-size: 1.6rem;
+  font-family: "work sans";
+} */
+
+.section-contact-main input[type="submit"] {
+  max-width: 30%;
+  border: none;
+}
+
+/* ===========================================
+Footer Section
+======================================= */
+
+.section-footer {
+  background: var(--heading);
+}
+
+.section-footer h3 {
+  color: var(--third);
+  margin-bottom: 4rem;
+}
+
+.f-about p {
+  color: #adadad;
+}
+
+.f-links ul,
+.f-services ul,
+.f-address address {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  justify-content: center;
+  list-style: none;
+}
+
+.f-links li,
+.f-links a,
+.f-services li,
+.f-services a {
+  font-size: 1.8rem;
+  color: #adadad;
+  text-transform: capitalize;
+}
+
+.f-links span,
+.f-services span,
+.f-address span {
+  margin-right: 1rem;
+}
+
+.f-address p {
+  font-style: normal;
+  color: #adadad;
+}
+
+.f-social-icons {
+  margin: 5rem 0;
+  text-align: center;
+  color: #adadad;
+}
+
+.f-social-icons .icons {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(144 172 209 / 20%);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  color: var(--heading);
+  animation: water-wave 3s linear infinite;
+  color: var(--third);
+}
+
+.f-credits p {
+  text-align: center;
+  color: #adadad;
+}
+
+footer a:hover {
+  color: var(--third);
+}
+/* ===========================================
+Media Queries Section
+======================================= */
+
+@media (max-width: 94em) {
+  .container {
+    max-width: 130rem;
+  }
+  .navbar-lists {
+    gap: 3.4rem;
+  }
+}
+
+/* for widht below 1200px  */
+@media (max-width: 75em) {
+  .container {
+    max-width: 110rem;
+  }
+  .navbar-lists {
+    gap: 3.4rem;
+  }
+}
+
+/* media queries less then 980px */
+@media (max-width: 980px) {
+  /* to make all the container with same padding  */
+  .container {
+    padding: 0 3.2rem;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+
+  /* when we are in 980px we need to show the menu open icon */
+  .mobile-navbar-btn {
+    display: block;
+    /* background-color: #212529; */
+    z-index: 99999;
+    border: 3px solid #212529;
+    color: #212529;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header .logo {
+    width: 40%;
+    /* height: 3.4rem; */
+  }
+
+  .navbar {
+    width: 100%;
+    height: 100vh;
+    background: #e7f5ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .navbar-lists {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .navbar-lists .navbar-link:link,
+  .navbar .navbar-lists .navbar-link:visited {
+    color: #212529;
+    font-size: 3.2rem;
+  }
+
+  .active .navbar {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+    z-index: 9999;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  /* hero section  */
+
+  .section-hero h1 {
+    line-height: 1.05;
+  }
+
+  /* section bidoata  */
+  .section-biodata .grid {
+    gap: 3rem;
+  }
+
+  /* section work  */
+  .section-work-data .common-numbers {
+    font-size: 3.2rem;
+  }
+
+  /* services section  */
+
+  .section-services .grid {
+    gap: 6rem;
+  }
+
+  .section-services .grid-three-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* resume section  */
+  .section-resume .grid-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .section-resume .grid-two-col img {
+    width: 50%;
+  }
+  .resume-img {
+    grid-row: 2;
+    transform: translateY(-2rem);
+  }
+
+  /* testimonial section  */
+  .section-testimonial .grid-three-col {
+    grid-template-columns: 2fr;
+  }
+
+  .section-footer .grid-four-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Below 780px  */
+@media (max-width: 780px) {
+  .container {
+    max-width: 720px;
+  }
+  /* hero section  */
+  .section-hero .grid-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .section-hero-data {
+    align-items: center;
+  }
+
+  /* .section-hero-data .hero-top-data { */
+    /* align-self: flex-start; */
+  /* } */
+
+  .hero-heading {
+    text-align: center;
+  }
+  .hero-para {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .section-hero img {
+    width: 70%;
+  }
+
+  /* work section  */
+  .section-portfolio .grid-three-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Below 560px  */
+@media (max-width: 35em) {
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .header .logo {
+    width: 60%;
+  }
+
+  /* secion .bio-data */
+
+  .section-biodata .grid-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .section-biodata .bio-image {
+    grid-row: 2;
+    margin-top: 3.2rem;
+  }
+
+  /* work section  */
+  .section-work-data .grid-four-col {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* services section  */
+  .section-services .grid-three-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+    </style>
+    <link rel="icon" type="image/x-icon" href="Images/about-us-favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="karn.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var currentPage = window.location.pathname.split("/").pop(); // Get current page URL
+
+          // Loop through each navbar link and compare with current page URL
+          document.querySelectorAll(".navbar-link").forEach(function(link) {
+              if (link.getAttribute("href") === currentPage) {
+                  link.parentNode.classList.add("active"); // Add "active" class to parent <li> element
+              }
+          });
+      });
+  </script>
+    <header class="header">
+      <img src="static/Images/image.png" style="height: 95%;" alt="logo">
+    <!-- <img src="images/logo.png" alt="thapa technical logo" class="logo" /> -->
+    <nav class="navbar">
+        <ul class="navbar-lists">
+          <li><a class="navbar-link home-link" href="karn">Home</a></li>
+          <li><a class="navbar-link service-link" href="services">Services</a></li>
+          <li><a class="navbar-link faq-link" href="faq">FAQ's</a></li>
+          <li><a class="navbar-link about-link" href="message-us">Contact Us</a></li>
+          <li><a class="navbar-link about-link" href="about">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-navbar-btn">
+      <ion-icon
+        class="mobile-nav-icon"
+        name="menu-outline"
+        class="mobile-nav-icon"
+      ></ion-icon>
+
+      <ion-icon
+        class="mobile-nav-icon"
+        name="close-outline"
+        class="mobile-nav-icon"
+      ></ion-icon>
+    </div>
+  </header>
+
+      <!-- ======================================== 
+        1st set Start  
+  ========================================  -->
+  <main>
+    <section class="section-hero section">
+      <div class="container grid grid-two-col">
+        <div class="section-hero-data">
+          <h4 class="hero-heading">Blood & Organ Donation Management System</h4>
+          <p class="hero-para">
+            The Blood&Organ Donation Management System is a cutting-edge solution that is transforming the way we manage 
+            blood and organ donations. This advanced system provides an easy-to-use platform for managing donations, tracking donors, 
+            and coordinating logistics across multiple organizations. With a comprehensive database of donors, recipients, and donations, 
+            the system makes it easy to find the right match for every patient in need. From scheduling appointments to managing transportation 
+            and storage, the system automates many of the tasks associated with blood and organ donation management, saving time and 
+            resources and improving efficiency.
+            <br>
+            The system is designed with the needs of both donors and recipients in mind. It provides an easy-to-use interface for donors 
+            to register and schedule appointments, while also providing critical information to healthcare providers and other stakeholders. 
+          
+
+            <!-- The main aim of creating a blood organ donation management system is to streamline the process of managing blood and organ 
+            donations, ensuring efficient coordination among donors, recipients, and healthcare organizations, ultimately leading to 
+            more successful donations and improved patient outcomes. -->
+          </p>
+        </div>
+
+        <div class="img-hover-zoom img-hover-zoom--colorize">
+          <img src="static/Images/organ-donation.png" alt="doodle image"/>
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <!-- ======================================== 
+         2nd set Start  
+  ========================================  -->
+  <section class="section-biodata section">
+    <div class="container grid grid-two-col">
+      <div class="img-hover-zoom img-hover-zoom--colorize">
+        <img src="static/Images/chart-bd.png" alt="bio data image" />
+      </div>
+      <div class="bio-data">
+        <h2 class="common-heading">Why this management system is made?</h2>
+        <p>
+          An blood-organ donation management system can be created to streamline and automate the process of organ and blood donation. 
+      The system can have several benefits, including:<br>
+      1.Efficient management: An blood-organ  donation management system can help in efficient management of donor registrations, blood and organ collection, storage and distribution.
+      <br>
+      2.Increased transparency: The system can provide greater transparency and accountability in the entire process of organ and blood donation, which can increase the trust of the public in the donation process.
+      <br>
+      3.Better communication: The system can help in better communication between hospitals, blood banks, organ procurement organizations and other stakeholders involved in the donation process.
+      <br>
+      4.Improved data management: The system can help in maintaining accurate and up-to-date records of donors and donations, which can be useful for research and planning purposes.
+      <br>
+      5.Increased donor participation: The system can help in increasing donor participation by making the donation process more accessible, convenient and user-friendly.
+     </p>
+     </div>
+  </section>
+      <!-- ======================================== 
+        3rd set Start  
+  ========================================  -->
+  <main>
+    <section class="section-hero section">
+      <div class="container grid grid-two-col">
+        <div class="section-hero-data">
+          <h4 class="hero-heading">Imapct & Statistics</h4>
+          <p class="hero-para">
+            As a blood organ donation management system, our impact and statistics speak to the significant contributions we have made towards saving lives and improving the health of those in need. 
+            Here are some examples of the live impact and statistics:
+            <br>
+            <br>
+              -> Over 10,000 units of blood collected annually: Our blood donation 
+                drives and programs have resulted in the collection of over 10,000 units 
+                of blood each year, ensuring a stable and reliable blood supply for patients in need of transfusions.
+                <br>
+              -> 500+ successful organ transplants: Through our organ transplant programs, 
+                we have facilitated over 500 successful organ transplants, 
+                giving patients a second chance at life and improving their quality of life.
+                <br>
+              -> 30,000+ lives saved: The blood and organs donated through our system have 
+                helped save over 30,000 lives, making a tangible impact on the health and well-being of patients in our community.
+              <br>
+              -> 20% increase in blood and organ donations: Our efforts in raising awareness and educating the 
+                public about the importance of blood and organ donation have resulted in a 20% increase in donations, ensuring a steady supply for patients in need.
+              <br>
+              ->40,000+ registered donors: Our system has successfully registered over 40,000 donors, including diverse backgrounds, ethnicities, 
+                and blood types, making it possible to provide better-matched blood and organs for patients in need.
+              <br>
+              ->Collaborations with 10+ hospitals and healthcare providers: Our partnerships and collaborations with 10+ hospitals and healthcare providers have allowed 
+                us to expand our reach and impact, providing blood and organ donation services to a wider population.
+              <br>
+              <br>
+            <p>These live impact and statistics demonstrate our organization's commitment to promoting blood and organ donation, saving lives, and making 
+              a positive difference in the community. We are proud of our achievements and will continue our efforts to meet the 
+              increasing demand for blood and organs, and support patients in need of life-saving interventions.
+            </p> 
+            
+
+          </p>
+        </div>
+
+        <div class="img-hover-zoom img-hover-zoom--colorize">
+          <img src="static/Images/statistics.png" alt="doodle image"/>
+        </div>
+      </div>
+    </section>
+  </main>
+
+   
+
+    <!-- ======================================== 
+          Our footer Section   
+    ========================================  -->
+    <footer class="section section-footer section--hidden">
+      <div class="container grid grid-four-col">
+        <div class="f-about">
+          <h3>About</h3>
+          <p>The main aim of creating a blood organ donation management system is to streamline the process of managing blood and organ 
+            donations, ensuring efficient coordination among donors, recipients, and healthcare organizations, ultimately leading to 
+            more successful donations and improved patient outcomes.
+          </p>
+        </div>
+
+        <div class="f-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="karn">Home</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="services">Services</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="faq">FAQ's</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="message-us">Contact</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="about">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="f-services">
+          <h3>FAQ's</h3>
+          <ul>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="faq">What is blood?</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="faq">Types of Blood</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="faq">Blood Transfusion</a>
+            </li>
+
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="faq">What are organs?</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="faq">What is meant by organ donation?</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="faq">What are the types of organ donation?</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="f-address">
+          <h3>Have a Questions?</h3>
+            <div>
+              <p>
+                <span><ion-icon name="mail-outline"></ion-icon></span>
+                sample.mail@mail.com
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="f-social-icons">
+          <a href="">
+            <ion-icon class="icons" name="logo-linkedin"></ion-icon>
+          </a>
+
+          <a href="">
+            <ion-icon class="icons" name="logo-github"></ion-icon>
+          </a>
+
+          <a href="">
+            <ion-icon class="icons" name="logo-twitter"></ion-icon>
+          </a>
+
+          <a href="#">
+            <ion-icon class="icons" name="logo-instagram"></ion-icon>
+          </a>
+
+          <a href="">
+            <ion-icon class="icons" name="logo-youtube"></ion-icon>
+          </a>
+        </div>
+
+        <div class="f-credits">
+          <p>
+            Copyright ©2023 All rights reserved 
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ======================================== 
+          Our JavaScript Section   
+    ========================================  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/static/script/karn.js"></script>
+  </body>
+</html>

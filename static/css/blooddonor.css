@@ -1,0 +1,143 @@
+
+/* Center align the form */
+#body{
+    background-color: #4caf50;
+}
+#formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Style for the form */
+  form {
+    width: 80%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(172, 118, 118, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-top: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: lighter;
+    color: black;
+  }
+  
+  select, input[type="text"], input[type="date"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  select {
+    height: 40px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #46ab6d;
+  }
+  
+  /* Space between elements */
+  .spacer {
+    margin-top: 20px;
+  }
+  
+
+  disease-checkboxes {
+  display: flex;
+}
+
+
+
+
+.disease-checkboxes {
+  display: flex;
+}
+
+.disease-column {
+  flex: 1; /* Makes both columns equally sized */
+}
+
+
+
+.disease-checkboxes {
+  display: flex;
+}
+
+.disease-column {
+  flex: 1;
+  margin-right: 20px; /* Adjust margin as needed */
+}
+
+.disease-column:last-child {
+  margin-right: 0; /* Remove margin from the last column */
+}
+
+
+.medicine-checkboxes {
+    display: flex;
+  }
+  
+  .medicine-column {
+    flex: 1;
+    margin-right: 20px; /* Adjust margin as needed */
+  }
+  
+  .medicine-column:last-child {
+    margin-right: 0; /* Remove margin from the last column */
+  }
+
+  
+  
+  .form-group {
+    margin-bottom: 15px; /* Add margin between form groups */
+  }
+  
+  .disease-checkboxes,
+  .medicine-checkboxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .disease-column,
+  .medicine-column {
+    flex: 1;
+  }
+
+
+  h1, h2{
+    color: black;
+  }
+
+  

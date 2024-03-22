@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Organ Donor Registration</title>
+      <link rel="stylesheet" href="organdonor.css">
+      <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+p {
+    text-align: center;
+    color: black;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: rgb(214, 12, 12);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#donorForm{
+    background-color:rgb(255, 255, 255) ;
+}
+
+body{
+    background-color: #e5e4e2 ;
+}
+
+label{
+    color: black;
+
+}
+
+div{
+    color: black;
+}
+
+
+h2{
+    color: black;
+}
+
+h3{
+    color: black;
+}
+.logo{
+  width: 50px;
+  height: 200px;
+}
+
+
+      </style>
+    </head>
+    <body>
+      <header class="header">
+        <img class="logo" src="/static/logo.png" style="height: 95%;" alt="logo">
+
+      </header>
+      <h1>Become an Organ Donor</h1>
+      <p>Thank you for your interest in organ donation. By registering as a donor, you can save and improve the lives of many people in need.</p>
+    
+      <form id="donorForm" action="submit" method="post">
+        <h2>Personal Information</h2>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+    
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" required>
+    
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+    
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="aadharNumber">Aadhar Number:</label>
+        <input type="text" id="aadharNumber" name="aadharNumber" pattern="[0-9]{12}" required>
+    
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="blood_group">Blood Group:</label>
+        <select id="blood_group" name="blood_group" required>
+            <option value="">Select Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+
+        <h2>Organ Donation Options</h2>
+<label>Organs you wish to donate (check all that apply):</label>
+<div>
+  <input type="checkbox" id="heart" name="organs[]" value="Heart">
+  Heart
+</div>
+<div>
+  <input type="checkbox" id="lungs" name="organs[]" value="Lungs">
+  Lungs
+</div>
+<div>
+  <input type="checkbox" id="kidneys" name="organs[]" value="Kidneys">
+  Kidneys
+</div>
+<div>
+  <input type="checkbox" id="liver" name="organs[]" value="Liver">
+  Liver
+</div>
+<div>
+  <input type="checkbox" id="Pancrease" name="organs[]" value="Pancrease">
+  Pancrease
+</div>
+<label>
+  <input type="checkbox" id="Intestine" name="organs[]" value="Intestine">
+  Intestine
+</label>
+
+<div>
+  <input type="checkbox" id="other" name="organs[]" value="Other">
+  Other (please specify):
+  <!-- Add space here -->
+<div style="margin-top: 10px;"></div>
+  <input type="text" id="otherOrgan" name="otherOrgan">
+</div>
+
+<!-- Add space here -->
+<div style="margin-top: 20px;"></div>
+
+<!-- Tissues Donor Option -->
+<label style="margin-top: 20px;">Tissues you wish to donate (check all that apply):</label>
+<div>
+  <input type="checkbox" id="Cornea" name="organs[]" value="Cornea">
+  Cornea
+</div>
+<div>
+  <input type="checkbox" id="Eyeballs" name="organs[]" value="Eyeballs">
+  Eyeballs
+</div>
+<div>
+  <input type="checkbox" id="Bones" name="organs[]" value="Bones">
+  Bones
+</div>
+<div>
+  <input type="checkbox" id="BloodVessel" name="organs[]" value="Blood Vessel">
+  Blood Vessel
+</div>
+<div>
+  <input type="checkbox" id="Skin" name="organs[]" value="Skin">
+  Skin
+</div>
+<label>
+  <input type="checkbox" id="Intestine" name="organs[]" value="Intestine">
+  Intestine
+</label>
+<div>
+  <input type="checkbox" id="other" name="organs[]" value="Other">
+  Other (please specify):
+  <!-- Add space here -->
+<div style="margin-top: 10px;"></div>
+  <input type="text" id="otherOrgan" name="otherOrgan">
+</div>
+
+    
+
+        
+    
+        <h2>Emergency Contact :</h2>
+        <h3>Relation to Applicant</h3>
+        <select id="relation" name="relation" required>
+          <option value="">Select Relation</option>
+          <option value="Spouse">Spouse</option>
+          <option value="Parent">Parent</option>
+          <option value="Child">Child</option>
+          <option value="Sibling">Sibling</option>
+          <option value="Other">Other</option>
+        </select>
+    
+        <h3>Emergency Contact Information</h3>
+        <label for="emergencyName">Name:</label>
+        <input type="text" id="emergencyName" name="emergencyName" required>
+    
+        <label for="emergencyPhone">Phone Number:</label>
+        <input type="tel" id="emergencyPhone" name="emergencyPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+        <!-- Near By Hospital -->
+        <label for="blood_group">Available Hospital</label>
+        <select id="blood_group" name="blood_group" required>
+            <option value="">Select Available Hospital</option>
+            <option value="A">Welcare Hospital: Atladara - Vadsar Road, Near Miles Motors, Vadodara, Gujarat 390012</option>
+            <option value="B">Vitas Hsopital: Pragati Apartment, Dutt Vihar Society, Race Course, Opposite Income Tax Office, Near Kalyan Jewellers, Vadodara, Gujarat 390007</option>
+            <option value="C">Bhailal Amin General Hospital: Gorwa Road, Vadodara, Gujarat 390003</option>
+            <option value="D">Luxor Hospital: 2nd Floor Shyamal Sapphire Near Nilamber Circle Gotri-Vasna Link Road, Vadodara, Gujarat 390007</option>
+            <option value="E">Shubhechha Hospital: Society Urmi Charrasta, Srinagar, Vadodara, Gujarat 390020</option>
+            <option value="F">Naik Super Speciality Hospital: B/H Aradhana Theater, Opp Ssg Hospital, Salatwada Rd, Raopura, Vadodara, Gujarat 390001</option>
+            <option value="G">Swadia Hospital: Kothi Char Rasta, Karivav Road, Opp Kuber Bhavan, Raopura, Vadodara, Gujarat 390001</option>
+            <option value="H">Gujarat Superspeciality Hospital Vadodara: New India Mill Compound, Nr Jetalpur Bridge, Jetalpur Road, Vadodara, Gujarat 390020</option>
+            <option value="I">Baroda Hospital: Anant Apartment, 1st Floor, Beside Aradhana Cinema, Tilak Road, Vadodara, Gujarat 390001 </option>
+            <option value="J">Spandan Multi Speciality Hospital: Beside Ward Office No.4, Sindhwai Mata Road, Manjalpur, Vadodara, Gujarat 390011AZ </option>
+
+            <!-- Add space here -->
+          <div style="margin-top: 40px;"></div>
+    
+        <input type="submit" id="submitButton" value="Register as Donor">
+
+      </form>
+    </body>
+    </html>
+    

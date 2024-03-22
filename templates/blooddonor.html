@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation Form</title>
+  <link rel="stylesheet" href="/static/css/blooddonor.css">
+</head>
+<style>
+    body {
+      background-color: #e5e4e2;
+      color: white;
+    }
+  </style>
+<body>
+    <div style="margin-bottom: 580px;"></div>
+  <div id="formContainer">
+    <form id="bloodDonationForm" action="#" method="post">
+      <h1>Blood Donation Form</h1>
+      <div class="form-group">
+        <label for="bloodType">Blood Type You Want to Donate:</label>
+        <select id="bloodType" name="bloodType" required>
+          <option value="">Select Blood Type</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+      </div>
+
+      <div class="spacer"></div>
+
+      <h2>Personal Information</h2>
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation">
+      </div>
+
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="weight">Weight (in kg):</label>
+        <input type="number" id="weight" name="weight" min="0" required>
+      </div>
+
+      
+
+      <div class="form-group">
+        <label for="height">Height (in cm):</label>
+        <input type="number" id="height" name="height" min="0" required>
+      </div>
+
+      
+      <div class="form-group">
+        <label for="lastDonationDate">Last Time You Donated Blood:</label>
+        <input type="date" id="lastDonationDate" name="lastDonationDate">
+      </div>
+
+      <h2>Previously Donated Blood</h2>
+      <div class="form-group">
+        <label>Have you previously donated blood?</label>
+        <br>
+        <input type="radio" id="previouslyDonatedYes" name="previouslyDonated" value="Yes">
+        <label for="previouslyDonatedYes">Yes</label>
+        <input type="radio" id="previouslyDonatedNo" name="previouslyDonated" value="No">
+        <label for="previouslyDonatedNo">No</label>
+      </div>
+
+      <h2>Do you suffer from or have suffered from any of the following diseases?</h2>
+
+<div class="disease-checkboxes">
+  <div class="disease-column">
+    <input type="checkbox" id="heartDisease" name="diseases[]" value="Heart Disease">
+    <label for="heartDisease">Heart Disease</label>
+    <br>
+
+    <input type="checkbox" id="diabetes" name="diseases[]" value="Diabetes">
+    <label for="diabetes">Diabetes</label>
+    <br>
+
+    <input type="checkbox" id="hepatitis" name="diseases[]" value="Hepatitis B/C">
+    <label for="hepatitis">Hepatitis B/C</label>
+    <br>
+
+    <input type="checkbox" id="lungDisease" name="diseases[]" value="Lung Disease">
+    <label for="lungDisease">Lung Disease</label>
+    <br>
+
+    <input type="checkbox" id="allergicDisease" name="diseases[]" value="Allergic Disease">
+    <label for="allergicDisease">Allergic Disease</label>
+    <br>
+
+    <input type="checkbox" id="kidneyDisease" name="diseases[]" value="Kidney Disease">
+    <label for="kidneyDisease">Kidney Disease</label>
+    <br>
+
+    <input type="checkbox" id="bleedingTendency" name="diseases[]" value="Abnormal Bleeding tendency">
+    <label for="bleedingTendency">Abnormal Bleeding tendency</label>
+    <br>
+
+    <input type="checkbox" id="jaundice" name="diseases[]" value="Jaundice (last one year)">
+    <label for="jaundice">Jaundice (last one year)</label>
+    <br>
+  </div>
+
+  <div class="disease-column">
+    <input type="checkbox" id="cancer" name="diseases[]" value="Cancer/Malignant Disease">
+    <label for="cancer">Cancer/Malignant Disease</label>
+    <br>
+
+    <input type="checkbox" id="std" name="diseases[]" value="Sexually Transmitted Diseases">
+    <label for="std">Sexually Transmitted Diseases</label>
+    <br>
+
+    <input type="checkbox" id="typhoid" name="diseases[]" value="Typhoid (last one year) (Antay joro)">
+    <label for="typhoid">Typhoid (last one year)</label>
+    <br>
+
+    <input type="checkbox" id="tuberculosis" name="diseases[]" value="Tuberculosis">
+    <label for="tuberculosis">Tuberculosis</label>
+    <br>
+
+    <input type="checkbox" id="epilepsy" name="diseases[]" value="Epilepsy (Charay rog)">
+    <label for="epilepsy">Epilepsy (Charay rog)</label>
+    <br>
+
+    <input type="checkbox" id="faintingSpells" name="diseases[]" value="Fainting spells">
+    <label for="faintingSpells">Fainting spells</label>
+    <br>
+
+    <input type="checkbox" id="malaria" name="diseases[]" value="Malaria (six months)">
+    <label for="malaria">Malaria (six months)</label>
+    <br>
+  </div>
+</div>
+
+<h2>Are you taking any of these Medicine in the past 72 hours?</h2>
+
+<div class="medicine-checkboxes">
+  <div class="medicine-column">
+    <input type="checkbox" id="medicine1" name="medicines[]" value="Medicine 1">
+    <label for="medicine1">Antibiotics</label>
+    <br>
+
+    <input type="checkbox" id="medicine2" name="medicines[]" value="Medicine 2">
+    <label for="medicine2">Aspirin</label>
+    <br>
+
+    <input type="checkbox" id="medicine3" name="medicines[]" value="Medicine 3">
+    <label for="medicine3">Alcohol</label>
+    <br>
+
+    <input type="checkbox" id="medicine4" name="medicines[]" value="Medicine 4">
+    <label for="medicine1">Steroids</label>
+    <br>
+
+    <input type="checkbox" id="medicine5" name="medicines[]" value="Medicine 5">
+    <label for="medicine2">Vaccinations</label>
+    <br>
+
+    <input type="checkbox" id="medicine6" name="medicines[]" value="Medicine 6">
+    <label for="medicine3">Rabis Vaccine</label>
+    <br>
+  </div>
+
+  <div class="medicine-column">
+    </div>
+</div>
+
+
+
+<h2>Is there any history of surgery or blood transfusion in the past six months?</h2>
+<input type="checkbox" id="Major" name="Major">
+<label for="surgery">Major</label><br>
+<input type="checkbox" id="Minor" name="Minor">
+<label for="surgery">Minor</label><br>
+<input type="checkbox" id="transfusion" name="transfusion">
+<label for="transfusion">Blood Transfusion</label>
+
+
+
+
+      <input type="submit" value="Submit">
+
+      <!-- Add space here -->
+      <div style="margin-bottom: 10px;"></div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/* ===========================================
+    1st set Start
+  ======================================= */
+
+/* Colorize-zoom Container */
+.img-hover-zoom--colorize img {
+    width: 95%;
+    height: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+    transition: transform .5s, filter 1.5s ease-in-out;
+    filter: grayscale(100%);
+  }
+  .active{
+    text-decoration-line: underline;
+  }
+  /* The Transformation */
+  .img-hover-zoom--colorize:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1);
+  }
+
+
+/* ===========================================
+   2nd set Start
+  ======================================= */
+
+
+
+  /* Brightness-zoom Container */
+.img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(80%);
+    width: 89%;
+    height: 70%;
+    margin-top: 21%;
+    margin-bottom: 40%;
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(1.3);
+  }
+  
