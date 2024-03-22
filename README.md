@@ -13,3 +13,7 @@ Karn-Flask-BloodBank-and-Organ-Management is a web application built using Flask
 Clone the repository:
    ```bash
    git clone https://github.com/zeusgodyt/Karn-Flask-BloodBank-and-Organ-Management.git
+````
+
+![Project Image](Homepage.png)
+![Project Image](Login.png)
