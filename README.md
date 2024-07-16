@@ -7,7 +7,7 @@ Karn-Flask-BloodBank-and-Organ-Management is a web application built using Flask
 - **Organ Donation Management**: Track organ donations, donors, and recipients.
 - **Search Functionality**: Enables users to search for blood banks and available organs.
 - **Admin Dashboard**: Provides administrators with insights into system activities and statistics.
-- 
+
 ## Installation
 Clone the repository:
    ```bash
