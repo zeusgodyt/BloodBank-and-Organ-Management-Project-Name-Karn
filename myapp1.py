@@ -86,22 +86,32 @@ def about():
 def profile():
     return render_template('profilesetting.html')
 
-##Dashboard
 
-# @app.route('/organdonar', methods=['GET', 'POST'])
-# def organdonar():
-#     return render_template('organdonar.html')
-# @app.route('/blooddonar', methods=['GET', 'POST'])
-# def bloodonar():
-#     return render_template('blooddonar.html')
-# @app.route('/bloodbank', methods=['GET', 'POST'])
-# def bloodbank():
-#     return render_template('bloodbank.html')
-# @app.route('/organbankinfo', methods=['GET', 'POST'])
-# def organbankinfo():
-#     return render_template('organbankinfo.html')
 
-##
+#Dashboard
+
+@app.route('/organdonar', methods=['GET', 'POST'])
+def organdonar():
+    return render_template('organdonor.html')
+
+@app.route('/blooddonar', methods=['GET', 'POST'])
+def blooddonar():
+    return render_template('blooddonor.html')
+
+@app.route('/bloodbank', methods=['GET', 'POST'])
+def bloodbank():
+    return render_template('bloodbank.html')
+
+@app.route('/organbankcards', methods=['GET', 'POST'])
+def organbankcards():
+    return render_template('organbankcards.html')
+
+@app.route('/organbankinfo', methods=['GET', 'POST'])
+def organbankinfo():
+    return render_template('organbankinfo.html')
+
+
+#
 
 @app.route('/logout') 
 def logout(): 
