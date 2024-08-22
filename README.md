@@ -1,5 +1,5 @@
 ## Introduction
-Karn-Flask-BloodBank-and-Organ-Management is a web application built using Flask, designed to manage blood bank inventories and organ donation processes efficiently. The system provides a user-friendly interface for both donors and administrators to interact with the database.
+Karn-BloodBank-and-Organ-Management is a web application built using Flask, designed to manage blood bank inventories and organ donation processes efficiently. The system provides a user-friendly interface for both donors and administrators to interact with the database.
 
 ## Features
 - **User Management**: Authentication and authorization for donors and administrators.
