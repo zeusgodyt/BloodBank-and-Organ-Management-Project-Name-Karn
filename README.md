@@ -19,3 +19,4 @@ python myapp1.py
 ````
 ![Project Image](Homepage.png)
 ![Project Image](Login.png)
+![Project Image](LighthouseReport.png)
