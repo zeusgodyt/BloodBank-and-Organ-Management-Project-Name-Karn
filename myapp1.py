@@ -88,7 +88,7 @@ def profile():
 
 
 
-#Dashboard
+#Dashboard Routes
 
 @app.route('/organdonar', methods=['GET', 'POST'])
 def organdonar():
@@ -111,7 +111,7 @@ def organbankinfo():
     return render_template('organbankinfo.html')
 
 
-#
+#session popout
 
 @app.route('/logout') 
 def logout(): 
